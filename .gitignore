@@ -1,7 +1,8 @@
 # --- Swift / SwiftPM ---
 .build/
 .swiftpm/
-Package.resolved
+# Note: Package.resolved is intentionally tracked to guarantee reproducible
+# dependency resolution across machines and CI.
 *.xcodeproj/
 *.xcworkspace/
 DerivedData/
