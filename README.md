@@ -19,6 +19,7 @@ Most personal finance apps are either bloated SaaS that ingest your bank data, o
 It is designed to feel like the kind of dashboard a private wealth manager would hand a client — net worth, asset allocation, cash-flow forecasting, runway, savings rate — but built for **one person, on their own Mac, with full privacy.**
 <p align="center">
   <img src="./docs/assets/homepage.png" alt="Homepage illustration"/>
+  <img src="./docs/assets/vault_demo.gif" alt="Demo"/>
 </p>
 
 ---
