@@ -17,14 +17,9 @@
 Most personal finance apps are either bloated SaaS that ingest your bank data, or barebones spreadsheets. **Vault** sits in the middle: a native macOS app that gives you a **CFO-grade dashboard** of your wealth, runs an **AI financial advisor on your own machine**, and never sends a byte off your computer.
 
 It is designed to feel like the kind of dashboard a private wealth manager would hand a client — net worth, asset allocation, cash-flow forecasting, runway, savings rate — but built for **one person, on their own Mac, with full privacy.**
-
-> **Add to your screenshots / GIF here.** _Place captures into `docs/assets/` and reference them below._
-
-```
-docs/assets/dashboard.png   ← suggested name
-docs/assets/assistant.gif
-docs/assets/forecast.png
-```
+<p align="center">
+  <img src="./docs/assets/homepage.png" alt="Homepage illustration"/>
+</p>
 
 ---
 
