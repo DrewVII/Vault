@@ -1,0 +1,37 @@
+# --- Swift / SwiftPM ---
+.build/
+.swiftpm/
+Package.resolved
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# --- App artifacts ---
+Vault.app/
+*.dSYM/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs / Local data ---
+*.log
+/Library/
+
+# --- Local user data (just in case) ---
+store.json
+conversation.json

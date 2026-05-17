@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build (macOS)
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show toolchain
+        run: |
+          swift --version
+          xcrun --show-sdk-path --sdk macosx
+
+      - name: Resolve SwiftPM dependencies
+        run: swift package resolve
+
+      - name: Build (debug)
+        run: swift build
+
+      - name: Build (release)
+        run: swift build -c release
+
+      - name: Bundle .app
+        run: |
+          chmod +x build.sh
+          ./build.sh
+          ls -la Vault.app/Contents
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Vault.app
+          path: Vault.app
+          if-no-files-found: error
+          retention-days: 14
